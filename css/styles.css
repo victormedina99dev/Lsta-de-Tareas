@@ -1,0 +1,60 @@
+h1{
+    
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url(../img/kuromi_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+input{
+    border-radius: 25px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid #3b0747;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+input::-webkit-input-placeholder{
+        color: #3b07479c;
+        text-align: center;
+    }
+
+#buttonagg{
+    border-radius: 25px;
+    height: 36px;
+    width: 100px;
+    background-color: #5dd64d;
+    
+}    
+
+button{
+    border-radius: 25px;
+    height: 26px;
+    width: 75px;
+    background-color: #f30101;
+    text-align: center;
+}
+
+fieldset{
+    border: 2px solid #92649c;
+    border-radius: 10px;
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: left;
+    background-color: #00000075;
+}
+
+li{
+    margin: 10px 0;
+}
