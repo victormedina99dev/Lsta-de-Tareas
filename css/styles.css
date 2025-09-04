@@ -40,7 +40,7 @@ input::-webkit-input-placeholder{
     
 }    
 
-#horaTarea{
+#horaTarea {
     border-radius: 25px;
     height: 30px;
     width: 75px;
@@ -75,8 +75,8 @@ li{
 }
 
 /* Estilos generales para inputs */
-input, #horaTarea {
-    width: 90%;
+#horaTarea {
+    width: 72px;
     max-width: 300px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -85,9 +85,9 @@ input, #horaTarea {
 /* Responsive para pantallas pequeñas */
 @media (max-width: 600px) {
     body {
-        background-size: cover; /* Asegura que cubra en móviles */
-        background-position: center center; /* Centra la imagen */
-        background-attachment: scroll; /* Evita problemas de desplazamiento en móviles */
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
         padding: 10px;
     }
     fieldset {
@@ -96,9 +96,15 @@ input, #horaTarea {
         margin: 20px auto;
         padding: 5px;
     }
-    input, #horaTarea, #buttonagg {
+    input, #buttonagg {
         width: 100%;
         margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #horaTarea {
+        width: 75px;      /* <-- Fuerza el ancho pequeño en móviles */
+        max-width: 75px;
+        margin-right: 10px;
         margin-bottom: 10px;
     }
     h1 {
