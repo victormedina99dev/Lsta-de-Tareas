@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
     <h1>Lista de Tareas</h1>
-    <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
-    <input type="time" id="horaTarea" placeholder="Hora (HH:MM)" >
-    <button id="buttonagg" onclick="agregarTarea()"> Agregar Tarea</button>
+    <div class="form-row">
+        <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
+        <input type="time" id="horaTarea" placeholder="Hora (HH:MM)">
+        <button id="buttonagg" onclick="agregarTarea()">Agregar</button>
+    </div>
     <fieldset>
-    <legend>Lista Actual</legend>
-    <ul id="listaTareas">
-        <!-- Las tareas se agregarán aquí -->
-    </ul>
+        <legend>Lista Actual</legend>
+        <ul id="listaTareas">
+            <!-- Las tareas se agregarán aquí -->
+        </ul>
     </fieldset>
 </body>
 </html>
