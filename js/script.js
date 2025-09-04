@@ -1,32 +1,26 @@
 function agregarTarea() {
-    
-    //Obtenemos el valor del campo de la tarea
     let nuevaTareaTexto = document.getElementById('nuevaTarea').value;
-    
-    //Validamos que el valor no sea vacio
+    let horaTarea = document.getElementById('horaTarea').value;
+
     if (nuevaTareaTexto === '') {
         alert('Por favor, ingrese una tarea.');
         return;
     }
+    if (horaTarea === '') {
+        alert('Por favor, seleccione una hora.');
+        return;
+    }
 
-    //Crear elemento en la lista
     let nuevaTarea = document.createElement('li');
-    nuevaTarea.textContent = nuevaTareaTexto + ' ';
-    
-    //Crear boton de eliminar
+    nuevaTarea.textContent = `${nuevaTareaTexto} [${horaTarea}] `;
+
     let botonEliminar = document.createElement('button');
     botonEliminar.textContent = 'Eliminar';
     botonEliminar.onclick = function() {nuevaTarea.remove();}
-    
-    //Agregar boton de eliminar al elemento de la lista
-    nuevaTarea.appendChild(botonEliminar);
 
-    //Agregar el elemento/ la tarea a la lista
+    nuevaTarea.appendChild(botonEliminar);
     document.getElementById('listaTareas').appendChild(nuevaTarea);
 
-    //Limpiar el campo de entrada
     document.getElementById('nuevaTarea').value = '';
-
-
-
+    document.getElementById('horaTarea').value = '';
 }
